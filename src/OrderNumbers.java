@@ -27,11 +27,5 @@ public class OrderNumbers {
         Collections.sort(num);
         System.out.println("\nEntered numbers in ascending order:");
         System.out.println(num);
-
-//        int[] array = new int[] {
-//                i, j, k, x, y
-//        };
-//        Arrays.sort(array);
-//        System.out.println(Arrays.toString(array));
     }
 }
