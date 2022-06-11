@@ -10,8 +10,10 @@ public class Factor {
         System.out.println("\nPairs of factors:");
 
         for (j = 1; j * j <= i; j++) {
-            if (i % j == 0)
-                System.out.println(j + " x " + i/j);
+            if (i % j == 0) {
+                int k = i / j;
+                System.out.println(j + " x " + k);
             }
         }
     }
+}
