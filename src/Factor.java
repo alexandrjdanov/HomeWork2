@@ -2,19 +2,16 @@ import java.util.Scanner;
 
 public class Factor {
     public static void main(String[] args) {
-        int i, j = 0, k = 0;
+        int i, j; // i - число, для которого ищем множители; j - множители
 
         Scanner input = new Scanner(System.in);
-        System.out.println("Enter integer and push [Enter]:");
+        System.out.println("Enter an integer and push [Enter]:");
         i = input.nextInt();
-        i %= j * k;
+        System.out.println("\nPairs of factors:");
 
-        for (j = 1; j > 1; j++) {
-            for (k = 1; k > 1; k++) {
-                System.out.println(k + " " + j);
-
-
+        for (j = 1; j * j <= i; j++) {
+            if (i % j == 0)
+                System.out.println(j + " x " + i/j);
             }
         }
     }
-}
